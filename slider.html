@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <script>
+   window.onload = function() {
+       // ви можете зробити скільки завгодно слайдів
+       let slides = [
+           {
+               title: "Университет",
+               background: "public/images/1.jpg",
+               link: "https://karazin.ua/"
+           }, {
+               title: "Библиотека",
+               background: "public/images/2.jpg",
+               link: "http://www-library.univer.kharkov.ua/"
+           }, {
+		       title: "Музей",
+               background: "public/images/3.jpg",
+               link: "http://www-museum.univer.kharkov.ua/"
+		   }
+       ]
+       Slider.initSlider(slides);
+   };
+</script>
+
+</head>
+<body>
+<header class="header"><img class="logo" src="assets/img/1.png" alt="loading..."></header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Slider</h1>
+		   <button id="show_hide">Hide</button>
+		   <div id="elements">
+		   </br>
+           <div id="slider"></div></br>
+		   <button id="prev">Prev</button>
+		   <button id="next">Next</button>
+		   <button id="toggle">Start</button>
+		   </div>
+
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Menu</h3>
+       <ul>
+	       <li><a href="index.html">Main</a></li>
+           <li><a href="contact.html">Contact</a></li>
+		   <li><a href="about.html">About</a></li>
+		   <li><a href="media.html">Media</a></li>
+		   <li><a href="table.html">Table</a></li>
+       </ul>
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"><img class="logo" src="assets/img/1.png" alt="loading..."></footer>
+</div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
